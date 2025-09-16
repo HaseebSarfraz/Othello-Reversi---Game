@@ -3,35 +3,35 @@
 > **Academic Integrity** — This is a **demo-only case study**. Per UofT CSC207 policy the source code is private. I’m happy to discuss implementation details in interviews.
 
 ## Demo
-- **Video (≈90–120s):** https://github.com/HaseebSarfraz/Othello-Reversi/releases/download/v1.0.0/Othello.Demo.mp4  ← replace with your actual Release link
+- **Video (≈90–120s):** https://github.com/HaseebSarfraz/Othello-Reversi/releases/download/v1.0.0/Othello.Demo.mp4  
+  _(replace with your actual Release link)_
 
 ## Overview
-A complete **console Othello** game focused on **OOP design practice** in Java. It implements full rules (legal moves, flips, pass/terminal states, scoring), Human/CPU play, and a small simulator for batch runs.
+A complete **console Othello** game focused on **OOP practice in Java**. Implements full rules (legal moves, flips, pass/terminal states, scoring), Human/computer play, and a small simulator for batch runs and statistics.
 
 ## Highlights
-- Play modes: **Human vs Human**, **Human vs Random**, **Human vs Greedy**, **Random vs Random**, **Random vs Greedy**.
-- CPU agents: **Random** and **Greedy** (maximize immediate flips).
-- Clean separation of **engine** (board/rules) from **controllers** (match types).
+- Modes: **Human vs Human**, **Human vs Random**, **Human vs Greedy**, **Random vs Random**, **Random vs Greedy**.
+- Programmed opponents: **Random** and **Greedy** (maximize immediate flips).
+- **Performance:** runs **10,000** random games in **< 7 seconds** on a laptop-class CPU (RNG not seeded).
 
-### Design notes
-- **Model:** `OthelloBoard`, `Move` keep rules and state transitions self-contained.
-- **Strategy pattern:** `Player` interface with `PlayerHuman`, `PlayerRandom`, `PlayerGreedy`.
-- **Controllers:** one class per matchup keeps the game loop/UI orchestration minimal and testable.
-- **Simulation:** headless runner to execute large numbers of games for statistics.
+## Design notes
+- **Model & rules:** `OthelloBoard` and `Move` encapsulate state updates and flipping logic.
+- **Interfaces & strategies:** `Player` interface with `PlayerHuman`, `PlayerRandom`, `PlayerGreedy` for pluggable opponents.
+- **Controllers:** one class per matchup keeps the game loop minimal and easy to reason about.
+- **Simulation:** headless runner to execute many games and collect statistics.
 
 ## Random vs Random statistics (10,000 games)
-> RNG is **not seeded**; numbers vary run-to-run but the pattern is consistent.
-
 - **P1 win rate:** `0.4506`  
 - **P2 win rate:** `0.5102`  
-- **Ties:** `≈ 0.0392` (from 1 − 0.4506 − 0.5102)
-
-**Conclusion:** Results **do not support H₀** (no advantage). Player 2 shows a small but clear edge in Random vs Random play.  
-See `randomVsRandomReport.txt` for the write-up and a simple coin-flip counter-example argument used to reason about chance vs effect size.
+- **Ties:** `≈ 0.0392`  
+**Conclusion:** Results do **not** support H₀ (no advantage); Player 2 shows a small but consistent edge. See `randomVsRandomReport.txt` for the write-up and reasoning.
 
 ## Testing
-- Unit tests on move legality, flips, passes, terminal states, and scoring.
-- Light property checks (e.g., parity/validity of legal moves across turns).
+- Unit tests for move legality, flips, pass/terminal states, and scoring.
+- Light property checks (e.g., parity of legal moves across turns).
 
 ## What I learned
-Modeling game rules cleanly; using **interfaces and strategies** to swap AI behaviors; writing small simulations to gather **statistics** without seeded RNG; and separating engine/controller concerns so the program remains easy to extend (e.g., adding Minimax later).
+- **OOP in Java:** interfaces, classes, packages, and the Strategy pattern.
+- **Thorough testing** of stateful/edge-case-heavy functions.
+- **Collecting statistics** via simple simulations (without seeded RNG) and writing a brief report.
+- **Separation of concerns:** keeping board/rules independent from controllers and I/O for clarity and future extensions.
