@@ -3,7 +3,9 @@
 > **Academic Integrity** — This is a **demo-only case study**. Per UofT CSC207 policy, the source code and implementation details are private. I’m happy to discuss the project in interviews.
 
 ## Demo
-- **Video (≈90–120s):** https://github.com/HaseebSarfraz/Othello-Reversi/releases/download/v1.0.0/Othello.Demo.mp4
+- **Video (≈90–120s):** https://github.com/HaseebSarfraz/Othello-Reversi---Game/releases/download/v1.0.0/Othello.Demo.mp4
+- (Optional) Thumbnail:  
+  [![Watch the demo](media/thumbnail.png)](https://github.com/HaseebSarfraz/Othello-Reversi---Game/releases/download/v1.0.0/Othello.Demo.mp4)
 
 ## Overview
 A complete **console Othello** game focused on **OOP practice in Java**. Implements full rules (legal moves, flips, pass/terminal states, scoring), Human/computer play, and a small simulator for batch runs and statistics.
