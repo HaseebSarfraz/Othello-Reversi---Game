@@ -1,4 +1,4 @@
-# Othello (Reversi) — Demo & OOP Design Notes (CSC207, University of Toronto)
+# Othello (Reversi) — Demo + README(CSC207, University of Toronto)
 
 > **Academic Integrity** — This is a **demo-only case study**. Per UofT CSC207 policy, the source code and implementation details are private. I’m happy to discuss the project in interviews.
 
