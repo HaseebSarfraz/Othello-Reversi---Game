@@ -26,5 +26,5 @@ A complete **console Othello** game focused on **OOP practice in Java**. Impleme
 ## What I learned
 - **Java OOP fundamentals**: abstraction, encapsulation, interfaces, and inheritance/polymorphism.
 - **Thorough testing** of stateful, edge-case-heavy functions.
-- **Collecting and summarizing statistics** from simple simulations (RNG not seeded).
+- **Collecting and summarizing statistics** from simple simulations.
 - **Separation of concerns** to keep the project easy to extend (e.g., adding stronger heuristics later).
