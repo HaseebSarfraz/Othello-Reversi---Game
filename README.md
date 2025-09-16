@@ -18,7 +18,6 @@ A complete **console Othello** game focused on **OOP practice in Java**. Impleme
 - **Model & rules:** `OthelloBoard` and `Move` encapsulate state updates and flipping logic.
 - **Interfaces & strategies:** `Player` interface with `PlayerHuman`, `PlayerRandom`, `PlayerGreedy` for pluggable opponents.
 - **Controllers:** one class per matchup keeps the game loop minimal and easy to reason about.
-- **Simulation:** headless runner to execute many games and collect statistics.
 
 ## Random vs Random statistics (10,000 games)
 - **P1 win rate:** `0.4506`  
