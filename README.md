@@ -4,8 +4,6 @@
 
 ## Demo
 - **Video (≈90–120s):** https://github.com/HaseebSarfraz/Othello-Reversi---Game/releases/download/v1.0.0/Othello.Demo.mp4
-- (Optional) Thumbnail:  
-  [![Watch the demo](media/thumbnail.png)](https://github.com/HaseebSarfraz/Othello-Reversi---Game/releases/download/v1.0.0/Othello.Demo.mp4)
 
 ## Overview
 A complete **console Othello** game focused on **OOP practice in Java**. Implements full rules (legal moves, flips, pass/terminal states, scoring), Human/computer play, and a small simulator for batch runs and statistics.
